@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Investment — Jacob Photo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="subpage">
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+    <a href="index.html" class="nav-logo">Jacob Photo</a>
+    <ul class="nav-links">
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="investment.html" class="active">Investment</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <button class="nav-mobile-close" id="navClose">&#10005;</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="investment.html">Investment</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
+    <span class="label">Pricing &amp; Packages</span>
+    <h1 class="page-hero-title">The <em>Investment</em></h1>
+  </div>
+</div>
+
+<!-- INTERACTIVE PRICING -->
+<div class="inv-split">
+
+  <!-- LEFT: photo panel -->
+  <div class="inv-photo-panel">
+    <div class="inv-photos">
+      <div class="inv-photo active" data-id="engagement">
+         <img src="images/image2/engagement/gallery-Engagement-05.jpg" alt="Engagement">
+        <!-- <img src="images/inv-engagement.jpg" alt="Engagement"> -->
+      </div>
+      <div class="inv-photo" data-id="elopement">
+        <img src="images/image2/engagement/gallery-Engagement-30.jpg" alt="Elopement">
+        <!-- <img src="images/inv-elopement.jpg" alt="Elopement"> -->
+      </div>
+      <div class="inv-photo" data-id="wedding">
+        <img src="images/image2/wedding/gallery-wedding-09.jpg" alt="Wedding">
+        <!-- <img src="images/inv-wedding.jpg" alt="Wedding"> -->
+      </div>
+      <div class="inv-photo" data-id="portrait">
+        <img src="images/image2/portrait/gallery-Portraits-05.jpg" alt="Portrait">
+        <!-- <img src="images/inv-portrait.jpg" alt="Portrait"> -->
+      </div>
+      <div class="inv-photo" data-id="family">
+        <img src="images/image2/family/gallery-Family-04.jpg" alt="Family">
+        <!-- <img src="images/inv-family.jpg" alt="Family"> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: accordion list -->
+  <div class="inv-list-panel">
+
+    <div class="inv-item" data-id="engagement">
+      <button class="inv-title" onclick="toggleInv(this)">
+        Couples &amp; Engagements
+      </button>
+      <div class="inv-body">
+        <p class="inv-price">Starting at $658</p>
+        <p class="inv-desc">A relaxed session for couples who want to celebrate their love story before the big day — or simply because. You'll receive at least 50 fully edited photos, golden-hour light, and an experience that feels more like a date than a photoshoot.</p>
+        <ul class="inv-list">
+          <li>2 hour session</li>
+          <li>Up to 2 locations</li>
+          <li>50+ edited images</li>
+          <li>Online gallery delivery</li>
+          <li>Outfit &amp; location guidance</li>
+        </ul>
+        <a href="contact.html" class="btn btn--sm">Inquire</a>
+      </div>
+    </div>
+
+    <div class="inv-item active" data-id="elopement">
+      <button class="inv-title" onclick="toggleInv(this)">
+        Elopements
+        <span class="inv-fav">Most Loved</span>
+      </button>
+      <div class="inv-body">
+        <p class="inv-price">Starting at $858</p>
+        <p class="inv-desc">Elopements hold a very special place in my heart — intimate, intentional, and completely yours. Packages include 2 hours of coverage, up to 10 people, and sneak peeks within 48 hours. You'll receive a minimum of 50–75 photos per hour.</p>
+        <ul class="inv-list">
+          <li>2 hours of coverage</li>
+          <li>Up to 10 guests</li>
+          <li>50–75 photos per hour</li>
+          <li>Sneak peeks within 48 hours</li>
+          <li>Full online gallery &amp; print release</li>
+        </ul>
+        <a href="contact.html" class="btn btn--sm">Inquire</a>
+      </div>
+    </div>
+
+    <div class="inv-item" data-id="wedding">
+      <button class="inv-title" onclick="toggleInv(this)">
+        Weddings
+      </button>
+      <div class="inv-body">
+        <p class="inv-price">Starting at $3,600</p>
+        <p class="inv-desc">Every wedding is as unique as the love story behind it — from backyard parties to intimate church ceremonies, I'm here to celebrate it all. My goal is to make your photos feel real and alive. You'll receive a sneak peek within 48 hours and at least 50 photos per hour of coverage.</p>
+        <ul class="inv-list">
+          <li>6–10 hours of coverage</li>
+          <li>300+ edited images</li>
+          <li>Sneak peeks within 48 hours</li>
+          <li>Complimentary engagement session</li>
+          <li>Custom timeline planning</li>
+          <li>Travel throughout New England</li>
+        </ul>
+        <a href="contact.html" class="btn btn--sm">Inquire</a>
+      </div>
+    </div>
+
+    <div class="inv-item" data-id="portrait">
+      <button class="inv-title" onclick="toggleInv(this)">
+        Portraits, Graduations &amp; Headshots
+      </button>
+      <div class="inv-body">
+        <p class="inv-price">Starting at $568</p>
+        <p class="inv-desc">Whether you're celebrating a milestone, building your personal brand, or just want beautiful images of yourself — this session is for you. You'll receive at least 25 fully edited, gallery-ready photos.</p>
+        <ul class="inv-list">
+          <li>1–2 hour session</li>
+          <li>1–2 locations</li>
+          <li>25+ edited images</li>
+          <li>Online gallery delivery</li>
+          <li>Full print release</li>
+        </ul>
+        <a href="contact.html" class="btn btn--sm">Inquire</a>
+      </div>
+    </div>
+
+    <div class="inv-item" data-id="family">
+      <button class="inv-title" onclick="toggleInv(this)">
+        Families &amp; Maternity
+      </button>
+      <div class="inv-body">
+        <p class="inv-price">Starting at $658</p>
+        <p class="inv-desc">This chapter of your family's story deserves to be remembered exactly as it is — joyful, messy, and full of love. You'll receive at least 50 fully edited photos that capture everyone, even the little ones who won't sit still.</p>
+        <ul class="inv-list">
+          <li>1–2 hour session</li>
+          <li>1 location</li>
+          <li>50+ edited images</li>
+          <li>Online gallery delivery</li>
+          <li>Full print release</li>
+        </ul>
+        <a href="contact.html" class="btn btn--sm">Inquire</a>
+      </div>
+    </div>
+
+  </div><!-- /inv-list-panel -->
+</div><!-- /inv-split -->
+
+<!-- FAQ -->
+<section class="invest-faq">
+  <div class="faq-inner">
+    <div style="text-align:center;margin-bottom:48px;">
+      <span class="label">FAQ</span>
+      <h2 class="heading">Common <em>Questions</em></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How far in advance should I book? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>For weddings, I recommend booking 4-8 weeks in advance as peak dates fill quickly. For portrait sessions, 1–2 weeks is usually sufficient — though spring and fall book faster.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          What if it rains on my session day? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>A little rain can make for magical photos! If severe weather requires rescheduling, we'll find a new date.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          I've never done professional photos before. Will I feel awkward? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>This is the most common concern I hear — and it completely disappears within the first 10 minutes. My job is to guide you through natural poses and capture candid moments so you never have to "perform" for the camera.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          How long until I receive my photos? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Portrait and engagement sessions are typically delivered within 1–2 weeks. Wedding galleries are delivered within 2–3 weeks. I'll always confirm the exact timeline when we book.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do you travel for sessions? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Yes! I'm based in Boston but love to travel throughout New England and beyond. Destination weddings and elopements are always welcome — just reach out and let's talk.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Do you require a deposit? <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Yes — a 30% non-refundable retainer is required to officially reserve your date. The remaining balance is due one week before your session or wedding day.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="quote-band">
+  <blockquote>"The investment of a lifetime — because these moments deserve to be preserved beautifully."</blockquote>
+  <br><br>
+  <a href="contact.html" class="btn btn--light">Start Your Inquiry</a>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">Jacob Photo</a>
+    <p class="footer-tag">Boston · New England · Destination</p>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="investment.html">Investment</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+      </a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Jacob Photo. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

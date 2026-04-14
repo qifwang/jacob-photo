@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Jacob Photo — Boston Photographer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav id="nav">
+  <div class="nav-inner">
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+    <a href="index.html" class="nav-logo">Jacob Photo</a>
+    <ul class="nav-links">
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="investment.html">Investment</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="nav-mobile" id="navMobile">
+  <button class="nav-mobile-close" id="navClose">&#10005;</button>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="investment.html">Investment</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- ═══ HERO SLIDESHOW ═══ -->
+<section class="home-hero">
+  <div class="slides" id="slides">
+    <div class="slide active">
+      <img src="images/hero-01.jpg" alt="Wedding on the dock">
+    </div>
+    <div class="slide">
+      <img src="images/image2/Engagement/gallery-Engagement-28.jpg" alt="Engagement session">
+    </div>
+    <div class="slide">
+      <img src="images/image2/wedding/gallery-wedding-18.jpg" alt="Family portrait">
+    </div>
+    <div class="slide">
+      <img src="images/hero-04.jpg" alt="Portrait session">
+    </div>
+    <div class="slide">
+      <img src="images/hero-05.jpg" alt="Golden hour couple">
+    </div>
+  </div>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-text">
+    <p class="hero-eyebrow">Boston · New England · Destination</p>
+    <h1 class="hero-name">Jacob Photo</h1>
+    <p class="hero-sub">Capturing the in-between moments that last forever</p>
+    <a href="contact.html" class="btn btn--light">Book Your Session</a>
+  </div>
+
+  <div class="hero-controls">
+    <button class="hero-arrow" id="heroPrev" aria-label="Previous">&#8592;</button>
+    <span class="hero-counter">
+      <span id="heroCurrent">01</span>
+      <span class="hero-counter-sep">/</span>
+      <span id="heroTotal">05</span>
+    </span>
+    <button class="hero-arrow" id="heroNext" aria-label="Next">&#8594;</button>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-bar"></div>
+    <span>scroll</span>
+  </div>
+</section>
+
+<!-- ═══ TICKER ═══ -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>Weddings &nbsp;·&nbsp; Engagements &nbsp;·&nbsp; Portraits &nbsp;·&nbsp; Maternity &nbsp;·&nbsp; Families &nbsp;·&nbsp; Seniors &nbsp;·&nbsp; Elopements &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <span aria-hidden="true">Weddings &nbsp;·&nbsp; Engagements &nbsp;·&nbsp; Portraits &nbsp;·&nbsp; Maternity &nbsp;·&nbsp; Families &nbsp;·&nbsp; Seniors &nbsp;·&nbsp; Elopements &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+<!-- ═══ INTRO SPLIT ═══ -->
+<div class="home-intro">
+  <div class="intro-img">
+    <div class="intro-img-inner">
+      <img src="images/about-preview.jpg" alt="Jacob">
+    </div>
+  </div>
+  <div class="intro-text">
+    <span class="label">Welcome</span>
+    <h2 class="heading">Hi, I'm Jacob — <em>so glad you're here</em></h2>
+    <div class="rule rule--left"></div>
+    <p>I'm a Boston-based photographer with a passion for authentic, emotional storytelling. Whether it's the quiet morning light on your wedding day or the spontaneous laughter during a family session, I believe the most meaningful images are the ones that feel effortlessly real.</p>
+    <p>My style blends timeless, editorial aesthetics with a warm and candid approach — genuine smiles, soft tones, and moments that take you right back to how it felt.</p>
+    <p>I work as an unobtrusive second-person observer — blending into the background so you can simply live the moment. No interruption, just an honest lens quietly capturing every beautiful detail as it unfolds naturally.</p>
+    <p class="pull">"I don't just take photos. I preserve the feeling of a moment."</p>
+    <p class="intro-sig">— Jacob Wang</p>
+    <a href="about.html" class="btn">More About Me</a>
+  </div>
+</div>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="services">
+  <span class="label">What I Offer</span>
+  <h2 class="heading">Sessions <em>&amp; Specialties</em></h2>
+  <div class="rule"></div>
+  <div class="services-grid">
+
+    <!-- 两个都指向 engagement -->
+    <a href="gallery.html?filter=engagement" class="svc-card svc-link">
+      <div class="svc-icon">◇</div>
+      <h3>Couples &amp; Engagements</h3>
+      <p>Relaxed, golden-hour sessions that celebrate your love story — before the big day or simply because.</p>
+      <span class="svc-cta">View Gallery ›</span>
+    </a>
+
+    <a href="gallery.html?filter=engagement" class="svc-card svc-link">
+      <div class="svc-icon">◇</div>
+      <h3>Elopements</h3>
+      <p>Intimate, intentional, and completely yours. Small moments that deserve to be beautifully preserved.</p>
+      <span class="svc-cta">View Gallery ›</span>
+    </a>
+
+    <a href="gallery.html?filter=wedding" class="svc-card svc-link">
+      <div class="svc-icon">◇</div>
+      <h3>Weddings</h3>
+      <p>Full-day coverage from backyard parties to intimate ceremonies — every love story told honestly.</p>
+      <span class="svc-cta">View Gallery ›</span>
+    </a>
+
+    <a href="gallery.html?filter=portrait" class="svc-card svc-link">
+      <div class="svc-icon">◇</div>
+      <h3>Portraits &amp; Graduations</h3>
+      <p>Senior portraits, headshots, graduation milestones — timeless images that show the real you.</p>
+      <span class="svc-cta">View Gallery ›</span>
+    </a>
+
+    <a href="gallery.html?filter=family" class="svc-card svc-link">
+      <div class="svc-icon">◇</div>
+      <h3>Families &amp; Maternity</h3>
+      <p>Candid, joyful sessions that freeze this exact chapter of your family's story forever.</p>
+      <span class="svc-cta">View Gallery ›</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- ═══ CONTACT CTA ═══ -->
+<div class="home-cta-band">
+  <img src="images/hero-06.jpg" alt="" class="cta-bg-img">
+  <div class="cta-overlay"></div>
+  <div class="cta-content">
+    <span class="label" style="color:rgba(244,239,230,0.75)">Ready to Begin?</span>
+    <h2 class="cta-heading">Let's Create Something <em>Beautiful</em> Together</h2>
+    <p class="cta-sub">Reach out and let's start planning your session.</p>
+    <a href="contact.html" class="btn btn--light">Contact Me</a>
+  </div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">Jacob Photo</a>
+    <p class="footer-tag">Boston · New England · Destination</p>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="investment.html">Investment</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="footer-social">
+      <a href="#" aria-label="Instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+      </a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Jacob Photo. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
